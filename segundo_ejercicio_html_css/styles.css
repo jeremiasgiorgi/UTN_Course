@@ -120,12 +120,10 @@ footer{
 }
 }
 @media only screen and (min-width: 1025px) {
-    /* Aquí podríamos aumentar el padding del encabezado y las
-    subsecciones */
     header, #info-personal, #habilidades {
     padding: 30px;
     }
-    /* Y hacer que los títulos sean más grandes */
+   
     h1, h2 {
     font-size: 28px;
     }
