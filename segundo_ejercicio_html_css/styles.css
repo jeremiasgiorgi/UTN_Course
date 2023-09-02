@@ -10,7 +10,7 @@ nav ol{
 }
 nav ol li{
     display: inline;
-    margin-right:20px;  
+    margin-right:10px;  
 }
 header{
     background-color:#f2f2f2;
@@ -19,7 +19,7 @@ header{
 }
 section{
     margin: 10px;
-    padding:px;
+    padding: 0;
     border: 100px;
 }
 footer{
@@ -120,12 +120,12 @@ footer{
 }
 }
 @media only screen and (min-width: 1025px) {
-    header, #info-personal, #habilidades {
+    header{
     padding: 30px;
     }
    
     h1, h2 {
-    font-size: 28px;
+    font-size: 22px;
     }
     }
 
