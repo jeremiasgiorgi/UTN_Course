@@ -1,16 +1,133 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
-
+nav ol{
+    list-style-type: none;
+    padding: 10px;
+}
+nav ol li{
+    display: inline;
+    margin-right:20px;  
+}
 header{
-    background-color: f2f2f2;
-    padding: 20px;
+    background-color:#f2f2f2;
+    padding: 10px;
+    text-align: center;
 }
 section{
-    margin: 20px;
-
+    margin: 10px;
+    padding:px;
+    border: 100px;
 }
 footer{
-    background-color: f2f2f2;
-    padding: 20px;
+    background-color: #dfdfdf;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
 }
+h1{
+    text-align: center;
+}
+
+#formulario_contacto{
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/*Estilos de Formulario*/
+form{
+    text-align: center;
+    margin: auto;
+    width: 300px;
+}
+label{  
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 4px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+
+
+}
+input[type="submit"]{
+    background-color: #b6e6b6;
+    padding: 5px;
+    margin: 8px 0 20px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+
+}
+input[type="submit"]:hover{
+    background-color: #94ba94;
+}
+
+/*Estilos de Tablas*/
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+
+}
+th,td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th{
+    background-color: #cbcbcb;
+    
+}
+tr{
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+
+/*Estilos Responsivos*/
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 16px;
+    }
+header,
+section,
+footer{
+    padding: 10px;
+    font-size: 18px;
+}
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    header{
+        padding: 20px;
+    }
+    h1, h2 {
+        font-size: 22px;
+}
+}
+@media only screen and (min-width: 1025px) {
+    /* Aquí podríamos aumentar el padding del encabezado y las
+    subsecciones */
+    header, #info-personal, #habilidades {
+    padding: 30px;
+    }
+    /* Y hacer que los títulos sean más grandes */
+    h1, h2 {
+    font-size: 28px;
+    }
+    }
+

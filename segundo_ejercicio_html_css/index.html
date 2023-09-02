@@ -1,22 +1,100 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheets" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css" >
         <title>Web de Jeremias Giorgi</title>
     </head>
 
     <body>
         <header>
             <h1>¡Bienvenidos a mi Pagina Web!</h1>
+            <nav>
+                <ol>
+                    <li><a href="#acerca_de_mi">Sobre mi</a></li>
+                    <li><a href="#educacion">Educacion</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contactos">Contacto</a></li>
+                    
+                </ol>
+            </nav>
         </header>
 
-        <section>
-            <h2>Contenido Principal</h2>
-            <p>Este es el cuerpo de la pagina</p>
+        <section id="acerca_de_mi">
+            <h2>Acerca de mi</h2>
+            <p>Mi nombre es Jeremias Giorgi, apasionado del desarrollo web y futuro.</p>
+            <p>Amante de la Coheteria Experimetal y de la Ciencia.</p>
+            <p>Tengo 19 años y soy de Cosquin, Cordoba, Argentina!</p>
+            <img src="mi_foto.jpg" alt="mi foto aca" width="200">
+        </section>
+                
+        <section id="educacion">
+            <h2>Educacion</h2>
+            <ul>
+                <li>Estudiante de curso en la Universidad Tecnologica Nacional</li>
+                <li>Estudiante de Licenciatura en Fisica, (FaMAF, UNC)</li>
+            </ul>
+        
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ol>
+                <li>JavaScript Basico</li>
+                <li>HTML</li>
+                <li>CSS</li>            
+            </ol>
+
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre del Proyecto</th>
+                        <th>Fecha</th>
+                        <th>Lenguajes</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <td>Pagina Web Personal</td>
+                    <td>Agosto 2023</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    
+                </tbody>
+            </table>
+
+
+        </section>
+        <section id="contactos">
+            <h2>Contactos</h2>
+            <p><a href="https://github.com/jeremiasgiorgi">GitHub</a></p>
+            <a href="">jeremiasgiorgi@gmail.com</a>
+
+        </section>
+
+        <section id="formulario_contacto">
+            <h2>Contáctame</h2>
+            <form action="/submit">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name"><br>
+
+                <label for="subject">Asunto</label>
+                <input type="text" name="subject" id="subject"><br>
+
+                <label for="mail">Correo Electronico</label>
+                <input type="email" name="mail" id="mail"><br>
+
+                <label for="message">Mensaje</label><br>
+                <textarea name="message" id="message" cols="50" rows="5"></textarea><br>
+                
+                <input type="submit" value="Enviar">
+                
+
         </section>
 
         <footer>
-            <p>Copyright 2023 CVOS.</p>
+            <p>CVOS © 2023 - Todos los Derechos Reservados</p>
         </footer>
     </body>
 
