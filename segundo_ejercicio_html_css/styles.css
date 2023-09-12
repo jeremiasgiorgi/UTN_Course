@@ -52,6 +52,7 @@ label{
 input[type="text"],
 input[type="email"],
 textarea{
+    resize: none;
     width: 100%;
     padding: 4px;
     margin: 5px 0 20px 0;
