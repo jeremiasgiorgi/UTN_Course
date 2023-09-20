@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Usuario from './components/Usuario/Usuario';
-import ListaDeTareas from './components/Tareas/ListaDeTareas';
-import Contador from './components/Contador/Contador';
+// import Usuario from './components/Usuario/Usuario';
+// import ListaDeTareas from './components/Tareas/ListaDeTareas';
+// import Contador from './components/Contador/Contador';
 import { useState } from 'react';
 import Saludo from './components/Saludo/Saludo';
 
