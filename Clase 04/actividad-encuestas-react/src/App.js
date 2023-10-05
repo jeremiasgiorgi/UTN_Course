@@ -8,6 +8,8 @@ function App() {
     ['Rojo', 'Azul', 'Verde'] },
     { id: 2, pregunta: '¿Cuál es tu comida favorita?', opciones:
     ['Pizza', 'Hamburguesa', 'Sushi'] },
+    { id: 3, pregunta: '¿Cuál es tu nombre fav?', opciones:
+    ['Andres', 'Patinus', 'Cocacola'] },
     ];
   return (
     <div className="App">
