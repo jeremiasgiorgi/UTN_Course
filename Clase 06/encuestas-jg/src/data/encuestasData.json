@@ -1,0 +1,75 @@
+   [
+      {
+        "id": 1,
+        "title": "Encuesta sobre gustos personales",
+        "questions": [
+          {
+            "id": 1,
+            "question": "¿Cuál es tu comida favorita?",
+            "options": ["Pizza", "Hamburguesa", "Sushi", "Ensalada"]
+          },
+          {
+            "id": 2,
+            "question": "¿Cuál es tu color favorito?",
+            "options": ["Rojo", "Azul", "Verde", "Amarillo", "Morado"]
+          },
+          {
+            "id": 3,
+            "question": "¿Cuál es tu película favorita?",
+            "options": ["El Padrino", "Titanic", "Star Wars", "Jurassic Park"]
+          },
+          {
+            "id": 4,
+            "question": "¿Cuál es tu deporte favorito?",
+            "options": ["Fútbol", "Baloncesto", "Tenis", "Natación"]
+          },
+          {
+            "id": 5,
+            "question": "¿Qué género de música prefieres?",
+            "options": ["Rock", "Pop", "Hip-hop", "Electrónica", "Jazz"]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Encuesta sobre películas",
+        "questions": [
+          {
+            "id": 1,
+            "question": "¿Cuál es tu género de película favorito?",
+            "options": ["Acción", "Comedia", "Drama", "Ciencia ficción", "Terror"]
+          },
+          {
+            "id": 2,
+            "question": "¿Cuál es tu película favorita de todos los tiempos?",
+            "options": ["El Padrino", "Titanic", "Star Wars", "Jurassic Park", "Pulp Fiction"]
+          },
+          {
+            "id": 3,
+            "question": "¿Prefieres ver películas en el cine o en casa?",
+            "options": ["Cine", "Casa"]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Encuesta sobre música",
+        "questions": [
+          {
+            "id": 1,
+            "question": "¿Cuál es tu género musical favorito?",
+            "options": ["Rock", "Pop", "Hip-hop", "Electrónica", "Jazz"]
+          },
+          {
+            "id": 2,
+            "question": "¿Tocas algún instrumento musical?",
+            "options": ["Sí", "No"]
+          },
+          {
+            "id": 3,
+            "question": "¿Cuál es tu banda o artista favorito?",
+            "options": ["The Beatles", "Michael Jackson", "Queen", "Beyoncé", "Coldplay"]
+          }
+        ]
+      }
+    ]
