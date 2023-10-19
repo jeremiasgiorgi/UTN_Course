@@ -11,10 +11,10 @@ function App() {
       <BrowserRouter>
         <div className='App'>
           <Routes>
-            <Route path='/' element={<MenuInicial />} />
+            <Route path='/' element={<MenuInicial/>} />
             <Route path='/encuestas' element={<Encuestas />} />
             <Route path='/encuestas/:id' element={<Encuesta />} />
-            <Route path='*' element={<notFound />} />
+            <Route path='*' Component={notFound} />
           </Routes>
         </div>
       </BrowserRouter>

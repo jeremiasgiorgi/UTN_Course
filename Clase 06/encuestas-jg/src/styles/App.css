@@ -55,3 +55,9 @@ footer{
   border: none;
   padding: 14px
 }
+
+.toda-pregunta{
+  border: 10px;
+  text-decoration: line-through;
+  background-color: red;
+}
