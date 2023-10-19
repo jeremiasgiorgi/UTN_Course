@@ -7,7 +7,7 @@ function Encuestas() {
       <div className='completo'>
         <h2>Encuestas Disponibles</h2>
         {encuestasData.map((encuesta) => (
-          <ul>
+          <ul key={encuesta.id} className="ul-encuestas">
              <li key={encuesta.id}>
         
              <Link to={`/encuestas/${encuesta.id}`}>{encuesta.title}</Link>

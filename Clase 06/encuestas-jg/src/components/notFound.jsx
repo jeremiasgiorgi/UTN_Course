@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function notFound (){
+function NotFound (){
     return(
         <div className="no-encontrado">
             <h1>404</h1>
@@ -12,4 +12,4 @@ function notFound (){
         </div>
     )
 }
-export default notFound
+export default NotFound

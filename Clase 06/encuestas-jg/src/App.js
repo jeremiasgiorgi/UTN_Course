@@ -1,7 +1,8 @@
 import React from 'react';
+import './styles/App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MenuInicial from './components/menu';
-import notFound from './components/notFound';
+import NotFound from './components/notFound';
 import Encuestas from './components/encuestas';
 import Encuesta from './components/encuesta';
 
@@ -14,7 +15,7 @@ function App() {
             <Route path='/' element={<MenuInicial/>} />
             <Route path='/encuestas' element={<Encuestas />} />
             <Route path='/encuestas/:id' element={<Encuesta />} />
-            <Route path='*' Component={notFound} />
+            <Route path='*' element={< NotFound />} />
           </Routes>
         </div>
       </BrowserRouter>

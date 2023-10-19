@@ -6,6 +6,7 @@ background-color: #9a9a9a;
 text-align: center;
 }
 .mainLink{
+  text-align: center;
   background-color: rgb(171, 171, 171);
   padding: 10px 10px 10px 10px;
   margin: auto;
@@ -45,6 +46,11 @@ footer{
   }
 
 
+  .encuensta-item{
+    text-align: center;
+    font-weight: 700;
+  }
+
 
 
 
@@ -59,5 +65,70 @@ footer{
 .toda-pregunta{
   border: 10px;
   text-decoration: line-through;
-  background-color: red;
+  background-color: rgb(66, 64, 64);
 }
+
+.ul-encuestas{
+  text-align: center;
+  background-color: rgb(203, 203, 203);
+  padding: 15px 15px 15px 15px;
+  transition: background-color 1.2s;
+  margin: auto;
+  border: none;
+  list-style-type: none;
+}
+.ul-encuestas:hover{
+  background-color: rgb(146, 115, 145);
+}
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.completo{
+  background-color: rgb(201, 201, 201);
+  margin: auto;
+  padding: 15px 15px 15px 15px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+  text-align: center;
+}
+.completo:hover{
+  color: rgb(161, 116, 162);
+}
+.ul-encuesta-container{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  list-style: none;
+  padding: 15px 15px 15px 15px;
+  font-weight: normal;
+}
+.li-encuesta-container{
+  padding: 15px 15px 15px 15px;
+  margin: auto;
+}
+
+.encuesta-item{
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
+.botonSub{
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  margin: 1%;
+  border: none;
+  border-radius: 2px;
+  border-style: none;
+  transition-property: background-color, border-width, border-color;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+
+}
+.botonSub:hover{
+  background-color: rgb(171, 234, 178);
+
+}
+.botonSub:onClick{}

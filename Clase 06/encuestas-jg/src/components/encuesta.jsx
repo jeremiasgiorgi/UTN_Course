@@ -28,18 +28,17 @@ function Encuesta() {
     };
   
     return (
-      <>
-        <h1>Esta es la encuesta {encuesta.id}</h1>
+      <div className="encuensta-item">
         <h2>{encuesta.title}</h2>
 
-        <ul>
+        <ul className="encuesta-item">
 
           {encuesta.questions.map((questions) => (
           <li key={questions.id}>{questions.question}
 
-            <ul>
+            <ul className="ul-encuesta-container">
               {questions.options.map(options =>(
-                <li key={options}>
+                <li key={options} className="li-encuesta-container">
                   <input
                     type="radio"
                     name={`question_${questions.id}`}
@@ -55,8 +54,8 @@ function Encuesta() {
           ))}
 
         </ul>
-        <button onClick={handleSubmit}>Submit</button>
-      </>
+        <button className="botonSub" onClick={handleSubmit}>Submit</button>
+      </div>
     );
   }
   
