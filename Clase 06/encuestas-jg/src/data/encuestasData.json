@@ -5,22 +5,22 @@
         "questions": [
           {
             "id": 1,
-            "question": "¿Cuál es tu comida favorita?",
+            "question": "¿Cuales de estas comidas prefieres?",
             "options": ["Pizza", "Hamburguesa", "Sushi", "Ensalada"]
           },
           {
             "id": 2,
-            "question": "¿Cuál es tu color favorito?",
+            "question": "¿Cuál de estos colores prefieres?",
             "options": ["Rojo", "Azul", "Verde", "Amarillo", "Morado"]
           },
           {
             "id": 3,
             "question": "¿Cuál es tu película favorita?",
-            "options": ["El Padrino", "Titanic", "Star Wars", "Jurassic Park"]
+            "options": ["El Padrino", "Titanic", "Star Wars", "Jurassic Park", "Otra"]
           },
           {
             "id": 4,
-            "question": "¿Cuál es tu deporte favorito?",
+            "question": "¿Que deporte prefieres?",
             "options": ["Fútbol", "Baloncesto", "Tenis", "Natación"]
           },
           {
@@ -42,7 +42,7 @@
           {
             "id": 2,
             "question": "¿Cuál es tu película favorita de todos los tiempos?",
-            "options": ["El Padrino", "Titanic", "Star Wars", "Jurassic Park", "Pulp Fiction"]
+            "options": ["El Padrino", "Titanic", "Star Wars", "Jurassic Park", "Pulp Fiction","Ninguna de las anteriores"]
           },
           {
             "id": 3,
@@ -67,7 +67,7 @@
           },
           {
             "id": 3,
-            "question": "¿Cuál es tu banda o artista favorito?",
+            "question": "¿Cuál es tu banda o artista favorito entre estos?",
             "options": ["The Beatles", "Michael Jackson", "Queen", "Beyoncé", "Coldplay"]
           }
         ]

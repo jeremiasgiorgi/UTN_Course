@@ -5,6 +5,7 @@ import MenuInicial from './components/menu';
 import NotFound from './components/notFound';
 import Encuestas from './components/encuestas';
 import Encuesta from './components/encuesta';
+import AñadirEncuesta from './components/añadirEncuesta';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path='/' element={<MenuInicial/>} />
             <Route path='/encuestas' element={<Encuestas />} />
             <Route path='/encuestas/:id' element={<Encuesta />} />
+            <Route path='/encuestas/nueva-encuesta' element={<AñadirEncuesta />} />
             <Route path='*' element={< NotFound />} />
           </Routes>
         </div>

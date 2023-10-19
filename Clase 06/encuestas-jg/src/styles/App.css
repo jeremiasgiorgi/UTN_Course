@@ -64,6 +64,7 @@ footer{
 
 .toda-pregunta{
   border: 10px;
+  padding: 5px 5px 5px 5px;
   text-decoration: line-through;
   background-color: rgb(66, 64, 64);
 }
@@ -93,7 +94,6 @@ li{
   border: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: color 0.5s;
-  transition: background-color 0.5s;
   text-align: center;
 }
 .completo:hover{
@@ -131,4 +131,15 @@ li{
   background-color: rgb(171, 234, 178);
 
 }
-.botonSub:onClick{}
+.encuesta-link-creacion{
+  background-color: rgb(231, 226, 226);
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+.nueva-encuesta-contenedor{
+  text-align: center;
+}
