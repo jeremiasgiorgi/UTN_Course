@@ -1,37 +1,47 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
-function AñadirEncuesta(){
-    const [nuevaEncuesta, setEncuesta] = useState({});
+const CrearEncuesta = ({ agregarEncuesta }) => {
+const { register, handleSubmit, formState: {errors} } = useForm();
+const navigate = useNavigate();
 
-    return(
-        <div className="nueva-encuesta-contenedor">
-        <h1>Crear encuesta</h1>
-        <form onSubmit={() => console.log("Subido")}>
-        <ul>
-            <li>
 
-                <label>Título:</label>
-                <input
-                     type="text"
-                     id="titulo"
-                     name="titulo"
-                />
-                </li><li>
-                <label>Descripcion:</label>
-                <input
-                     type="text"
-                     id="descripcion"
-                     name="descripcion"
-                />
-            </li>
-        </ul>
-        <button type="submit">Guardar Encuesta</button>
-        </form>
+const onSubmit = (data) => 
+{agregarEncuesta(data);
+    navigate('/');
+     };
+return (
+<div>
+    <h1>Crear Nueva Encuesta</h1>
+        <form onSubmit={handleSubmit(onSubmit)}>
+           <label>Título:</label>
+            <input
+                type="text"
+                id="title"
+                name="title"
+                {... register("title", {
+                required: 'Este campo es obligatorio', maxLength: { value: 50, message: 'El título debe tener menos de 50 caracteres' }
+                })}
+            />
 
-        </div>
-    )
-}
+{errors.titulo && <p>{errors.titulo.message}</p>}
 
-export default AñadirEncuesta
+    <label>Descripción:</label>
+    <textarea
+        id="descripcion"
+        name="descripcion"
+        {... register("descripcion", {maxLength: { value: 200, message: 'La descripción debe tener menos de 200 caracteres' }
+        })}
+/>
+        {errors.descripcion &&
+        <p>{errors.descripcion.message}</p>}
+
+{/* Agrega aquí campos adicionales y sus validaciones
+según sea necesario */}
+    <button type="submit">Guardar Encuesta</button>
+    </form>
+    </div>
+);
+};
+export default CrearEncuesta;
