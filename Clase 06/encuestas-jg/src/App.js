@@ -13,7 +13,7 @@ function App() {
   const [encuestas, setEncuestas] = useState(encuestasData);
 
   const agregarEncuesta = (nuevaEncuesta) => {
-    nuevaEncuesta.id = encuestasData.length + 1
+    nuevaEncuesta.id = encuestas.length + 1
     setEncuestas([...encuestas, nuevaEncuesta]);
   };
   return (
@@ -23,7 +23,7 @@ function App() {
           <Routes>
             <Route path='/' element={<MenuInicial/>} />
             <Route path='/encuestas' element={<Encuestas encuestas={encuestas} />} />
-            <Route path='/encuestas/:id' element={<Encuesta />} />
+            <Route path='/encuestas/:id' element={<Encuesta encuestas={encuestas} />} />
             <Route path='/encuestas/nueva-encuesta' element={<CrearEncuesta agregarEncuesta={agregarEncuesta} />} />
             <Route path='*' element={< NotFound />} />
           </Routes>
