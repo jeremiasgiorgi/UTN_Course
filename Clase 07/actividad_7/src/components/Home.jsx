@@ -7,15 +7,16 @@ function Home() {
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "<i>Developer<i>",
-        "<i>Rocketeer<i>",
-        "<i>Enthusiast<i>"
+        "<i>I'm a Developer<i>",
+        "<i>I'm a Rocketeer<i>",
+        "<i>I'm a Enthusiast<i>"
       ],
       typeSpeed: 90,
       backSpeed: 50,
       backDelay: 900,
       loop: true,
       loopCount: Infinity,
+      smartBackspace: true
       
     });
 
@@ -24,19 +25,18 @@ function Home() {
       typed.destroy();
     };
   }, []);
-    return (
-        <div className="container mt-5 col-6 mx-auto">
-        <div className="mb-4">
-                <h1>I'm Jeremias,</h1>
-                <h1>I'm a <span className='typewriterText' ref={el} /></h1>
+    return ( 
+        <div className="centerMenu">
+          <div className='typewriter'>
+                <p>I'm Jeremias</p>
+                <p> <span className='typewriterText' ref={el} /></p>
+           </div>
 
-                <div className='mt-4'>
-                    <p>¡Hola a todos! Soy un desarrollador aficionado a la Ciencia, Cohetería, Física y el software, En este espacio compartiré mi pasión por los mundos que me fascinan, espero que encuentres inspiración, conocimientos y algunas que otras conexiones </p>
-            
-                    <p>¡Bienvenido a mi mundo!</p>
-            </div>
-          </div>      
-        </div>
+              <div className='parrafoMenu'>
+                <p>Hello everyone! I am a developer fond of Science, Rocketry, Physics and software, In this space I will share my passion for the worlds that fascinate me, I hope you find inspiration, knowledge and some other connections.</p>
+                <p>Welcome to my world!</p>
+              </div>                 
+        </div>  
     );
 }
 

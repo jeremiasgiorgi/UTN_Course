@@ -1,7 +1,47 @@
-.typewriterText{
-  color: rgb(128, 196, 196);
+:root{
+  --bs-body-bg: #0e141b !important;
 }
 
+.typewriter{
+  font-size: 5rem;
+}
+.typewriterText{
+  color: rgb(128, 196, 196);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 1px;
+
+}
+.centerMenu {
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 50px;
+  
+}
+.nav-link {
+  color: white !important;
+  border-bottom: 3px solid #0e141b !important;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  }
+  .nav-link:hover {
+    color: rgb(255, 255, 255) !important;
+    border-bottom: 3px solid rgb(72, 72, 72) !important;
+    margin-right: 10px;
+    margin-left: 10px;
+    }
+    .nav-link.active{
+      border-bottom: 3px solid rgb(128, 196, 196) !important;
+    }
+  .parrafoMenu{}
+/* .centrar-divv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
 /* Otras reglas CSS... */
 
 /* @media (prefers-reduced-motion: no-preference) {

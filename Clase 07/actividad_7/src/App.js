@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import Header from './components/Header';
 import Home from './components/Home';
@@ -10,6 +11,7 @@ import Hobbies from './components/Hobbies';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import NotFound from './components/NotFound';
+import BlackHole from './components/Blackhole';
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/hobbies" element={<Hobbies />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/blackhole" element={<BlackHole />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes></>
                 <Footer />
