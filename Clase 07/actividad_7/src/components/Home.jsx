@@ -28,9 +28,13 @@ function Home() {
     return ( 
         <div className="centerMenu">
           <div className='typewriter'>
-                <p>I'm Jeremias</p>
+                <p>I'm Jeremias</p></div>
+            
+                <div >
                 <p> <span className='typewriterText' ref={el} /></p>
-           </div>
+                </div>
+              
+           
 
               <div className='parrafoMenu'>
                 <p>Hello everyone! I am a developer fond of Science, Rocketry, Physics and software, In this space I will share my passion for the worlds that fascinate me, I hope you find inspiration, knowledge and some other connections.</p>

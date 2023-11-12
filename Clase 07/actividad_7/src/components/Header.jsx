@@ -4,11 +4,11 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { useLocation } from 'react-router-dom';
 
 function Header() {
-    const location = useLocation();
+    const location = useLocation();   
     return (
-        <Navbar bg="#0e141b" expand="lg">
+        <Navbar bg="#0e141b" expand="sm">
             <Nav style={{ marginLeft: 'auto' }}>
-                <LinkContainer to="/" exact>
+                <LinkContainer to="/" exact="true">
                     <Nav.Link active={location.pathname === '/'}>home</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/about">
