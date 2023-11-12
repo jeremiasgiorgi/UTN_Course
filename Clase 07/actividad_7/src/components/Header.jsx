@@ -7,6 +7,12 @@ function Header() {
     const location = useLocation();   
     return (
         <Navbar bg="#0e141b" expand="sm">
+
+                <a href="https://youtu.be/Eyjj8BgsBGU?si=dzpFmxnsETMucp13" target="_blank" rel="noopener noreferrer" className="navbar-brand">
+                <img src="\images\me.jpg" width="36" height="36" className="d-inline-block align-top myImage" alt="" />
+                <span className='SpanName'>J.GIORGI</span>
+                </a>
+
             <Nav style={{ marginLeft: 'auto' }}>
                 <LinkContainer to="/" exact="true">
                     <Nav.Link active={location.pathname === '/'}>home</Nav.Link>

@@ -1,26 +1,37 @@
 :root{
   --bs-body-bg: #0e141b !important;
 }
-
-.typewriter{
-  font-size: 55px;
-
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url(./fonts/DMSerifDisplay-Italic.ttf);
 }
+.principal{
+  color: white;
+  margin-top: 130px;
+  margin-left: 60px;
+}
+.identity{
+  color: #e8c39e;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+  
+}
+.presentation{
+  font-size: 80px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: 'DM Serif Display';
+  margin-bottom: 32px;
+}
+.bio{
+  font-size: 20px;
+  font-weight: lighter;
+  
+}    
 .typewriterText{
   color: rgb(128, 196, 196);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 1px;
-  font-size: 55px;
-  padding: 0px;
-
-}
-.centerMenu {
-  color: white;
-  margin-bottom: 15px;
-  margin-left: 50px;
-  margin-right: 20px;
-  margin-top: 50px;
-  
 }
 .nav-link {
   color: white !important;
@@ -38,12 +49,20 @@
     .nav-link.active{
       border-bottom: 3px solid rgb(128, 196, 196) !important;
     }
-/* .centrar-divv {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+    .myImage{
+      border-radius: 50%;
+      margin-right: 10px;
+      margin-left: 60px;
+      margin-top: 0px;
+    }
+    .SpanName{
+      color: white;
+      font-size: 12px;
+      text-align: center;
+    }
+      
+    
+
 /* Otras reglas CSS... */
 
 /* @media (prefers-reduced-motion: no-preference) {

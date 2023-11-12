@@ -7,17 +7,19 @@ function Home() {
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "<i>I'm a Developer<i>",
-        "<i>I'm a Rocketeer<i>",
-        "<i>I'm a Enthusiast<i>"
+        "<i> Developer.<i>",
+        "<i> Rocketeer.<i>",
+        "<i> Enthusiast.<i>",
+        "<i> Happy Guy!<i>"
       ],
       typeSpeed: 90,
       backSpeed: 50,
       backDelay: 900,
       loop: true,
       loopCount: Infinity,
-      smartBackspace: true
-      
+      smartBackspace: false,
+      showCursor: true,
+      cursorChar: '|'
     });
 
     return () => {
@@ -25,22 +27,31 @@ function Home() {
       typed.destroy();
     };
   }, []);
-    return ( 
-        <div className="centerMenu">
-          <div className='typewriter'>
-                <p>I'm Jeremias</p></div>
-            
-                <div >
-                <p> <span className='typewriterText' ref={el} /></p>
-                </div>
-              
-           
+    return (
+    <div className='principal'>
 
-              <div className='parrafoMenu'>
-                <p>Hello everyone! I am a developer fond of Science, Rocketry, Physics and software, In this space I will share my passion for the worlds that fascinate me, I hope you find inspiration, knowledge and some other connections.</p>
-                <p>Welcome to my world!</p>
-              </div>                 
-        </div>  
+      <div className='identity'>
+
+        <p>Hi, My name is Jeremías</p>   
+
+      </div> 
+
+      <div className='presentation'>   
+
+        <p> I'm a <span className='typewriterText' ref={el} /></p>
+
+      </div>
+
+      <div className='bio'>      
+
+        <p>Front-End developer and occasionally a crazy guy who launches experimental rockets.</p>
+        <p>Welcome to my world!</p>
+
+      </div>
+
+      
+
+    </div>
     );
 }
 
