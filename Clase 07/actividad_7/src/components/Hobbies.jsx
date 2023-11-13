@@ -26,7 +26,7 @@ function Hobbies() {
     ];
 
     return (
-        <div className="container text-center mb-5 text-white">
+        <div className="container text-center mb-5 text-white pb-5">
             <div className='mt-4 mb-4 text-center text-white'>
             <h2>My hobbies</h2>
             </div>

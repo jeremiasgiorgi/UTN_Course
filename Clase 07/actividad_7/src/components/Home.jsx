@@ -48,9 +48,6 @@ function Home() {
         <p>Welcome to my world!</p>
 
       </div>
-
-      
-
     </div>
     );
 }
